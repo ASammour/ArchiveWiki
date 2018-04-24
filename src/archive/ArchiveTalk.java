@@ -46,7 +46,7 @@ public class ArchiveTalk {
          * التالية نقاش المقالات نقاش التصنيف نقاش القالب نقاش الوحدة نقاش
          * ميدياويكي نقاش المساعدة نقاش البوابة
          */
-        org.jsoup.nodes.Document document = Jsoup.connect("http://petscan.wmflabs.org/?language=ar&project=wikipedia&ns%5B1%5D=1&ns%5B5%5D=1&ns%5B9%5D=1&ns%5B11%5D=1&ns%5B13%5D=1&ns%5B15%5D=1&ns%5B101%5D=1&ns%5B829%5D=1&larger=3000&show_redirects=no&templates_yes=%D8%B1%D8%A3%D8%B3%20%D9%86%D9%82%D8%A7%D8%B4&sortby=size&sortorder=descending&interface_language=en&active_tab=tab_pageprops&doit=").get();
+        org.jsoup.nodes.Document document = Jsoup.connect("http://petscan.wmflabs.org/?language=ar&project=wikipedia&ns%5B1%5D=1&ns%5B5%5D=1&ns%5B9%5D=1&ns%5B11%5D=1&ns%5B13%5D=1&ns%5B15%5D=1&ns%5B101%5D=1&ns%5B829%5D=1&larger=1000&show_redirects=no&templates_yes=%D8%B1%D8%A3%D8%B3%20%D9%86%D9%82%D8%A7%D8%B4&sortby=size&sortorder=descending&interface_language=en&active_tab=tab_pageprops&doit=").get();
         Elements link = document.getElementsByClass("pagelink");
         Elements link1 = document.select("td").next().next();
 
