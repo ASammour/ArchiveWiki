@@ -66,7 +66,7 @@ public class ArchiveTalk {
 
             title = a.get(i) + ":" + link.get(i).ownText();
             System.out.println(title);
-            if (!title.contains("مراجعة") & !title.contains("تصويت")) {
+            if (!title.contains("مراجعة") & !title.contains("تصويت") && !title.contains("أرشيف")) {
                 String[] p = wiki.listPages(title, null, Wiki.ALL_NAMESPACES);
                 int max = 1;
                 for (String t : p) {
