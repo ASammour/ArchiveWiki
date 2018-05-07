@@ -73,7 +73,8 @@ public class ArchiveTalk {
                     /**
                      * يتأكد أنها ليست صفحة فرعية
                      */
-                    if (t.contains("أرشيف") && t.contains("[0-9]{1,2}") == true) {
+                    if (t.contains("أرشيف") && Character.isDigit(t.charAt(t.length()-1))
+                            && t.contains(title+"/أرشيف")) {
                         int x = Integer.parseInt(t.replaceFirst("^.*\\D", ""));
                         if (x >= max) {
                             max = x;
